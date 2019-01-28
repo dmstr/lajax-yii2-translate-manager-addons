@@ -1,6 +1,6 @@
 <?php
 
-namespace dmstr\lajax\translatemanager;
+namespace dmstr\lajax\translatemanager\services\scanners;
 
 use lajax\translatemanager\services\Scanner;
 use lajax\translatemanager\services\scanners\ScannerDatabase as BaseScannerDatabase;
