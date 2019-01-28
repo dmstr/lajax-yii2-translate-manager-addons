@@ -1,0 +1,21 @@
+{
+    "name": "dmstr/lajax-yii2-translate-manager-addons",
+    "description": "Addons for lajax/yii2-translatemanager",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Tobias Munk",
+            "email": "tobias@diemeisterei.de"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "dmstr\\lajax\\translatemanager\\": ""
+        }
+    }
+}
