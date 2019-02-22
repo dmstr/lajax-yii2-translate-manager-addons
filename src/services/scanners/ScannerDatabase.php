@@ -27,12 +27,12 @@ use yii\helpers\Console;
  *          lajax\translatemanager\services\scanners\ScannerPhpFunction::class,
  *          lajax\translatemanager\services\scanners\ScannerPhpArray::class,
  *          lajax\translatemanager\services\scanners\ScannerJavaScriptFunction::class,
- *          project\services\scanners\ScannerDatabase::class
+ *          dmstr\lajax\translatemanager\services\scanners\ScannerDatabase::class
  *      ],
  *   ],
  * ```
  *
- * @package project\services\scanners
+ * @package dmstr\lajax\translatemanager\services\scanners
  * @author Elias Luhr <e.luhr@herzogkommunikation.de>
  *
  * @property string pattern
