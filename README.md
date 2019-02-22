@@ -25,7 +25,23 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Once the extension is installed, just add the following to your already installed [translatemanager](https://github.com/lajax/yii2-translate-manager) module config  :
 
-```php
-<?= \dmstr\lajax\translatemanager\AutoloadExample::widget(); ?>```
+ ```php
+   'translatemanager' => [
+      'tables' => [
+          [
+              'connection' => 'db',
+              'table' => 'example_table_name',
+              'columns' => ['column0','column1']
+          ]
+          // Insert your own tables and column names as in the example above.
+      ],
+      'scanners' => [
+          lajax\translatemanager\services\scanners\ScannerPhpFunction::class,
+          lajax\translatemanager\services\scanners\ScannerPhpArray::class,
+          lajax\translatemanager\services\scanners\ScannerJavaScriptFunction::class,
+          dmstr\lajax\translatemanager\services\scanners\ScannerDatabase::class
+      ]
+   ]
+```
