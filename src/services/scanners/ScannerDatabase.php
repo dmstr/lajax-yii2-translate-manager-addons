@@ -56,7 +56,7 @@ class ScannerDatabase extends BaseScannerDatabase
     /**
      * @var string Pattern for finding translate function
      */
-    public $pattern = '/[ \W]t\s*\(\s*(["\'])([\w\s-_]*?[^\\\\])\1\s*,\s*?(["\'])(.*?[^\\\\])\3/im';
+    public $pattern = '/[ \W]t\s*\(\s*(["\'])([\w\s\-_]*?[^\\\\])\1\s*,\s*?(["\'])(.*?[^\\\\])\3/im';
 
     /**
      * @var integer Regex group for category in pattern
