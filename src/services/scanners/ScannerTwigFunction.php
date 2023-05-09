@@ -15,13 +15,13 @@ use yii\helpers\FileHelper;
  * "t" functions:
  *
  * ~~~
- * ::t('category of language element', 'language element');
- * ::t('category of language element', 'language element {replace}', ['replace' => 'String']);
- * ::t('category of language element', "language element");
- * ::t('category of language element', "language element {replace}", ['replace' => 'String']);
+ * t('category of language element', 'language element');
+ * t('category of language element', 'language element {replace}', ['replace' => 'String']);
+ * t('category of language element', "language element");
+ * t('category of language element', "language element {replace}", ['replace' => 'String']);
  * ~~~
  *
- * @author Lajos Molnár <lajax.m@gmail.com>
+ * @author Hamzah Algabri <h.algabri@herzogkommunikation.de>
  *
  * @since 1.0
  */
@@ -40,7 +40,7 @@ class ScannerTwigFunction extends ScannerPhpFunction
     /**
      * @var array Twig translate function.
      */
-    public $twigTranslators = ['t'];
+    public $twigTranslators = [' t'];
 
     /**
      * Start scanning Twig files.
