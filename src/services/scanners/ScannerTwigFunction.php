@@ -70,6 +70,8 @@ class ScannerTwigFunction extends ScannerPhpFunction
      */
     protected function initFiles()
     {
+        $this->module->patterns[] = '*.twig';
+
         if (!empty(static::$files[static::EXTENSION]) || !in_array(static::EXTENSION, $this->module->patterns)) {
             return;
         }
